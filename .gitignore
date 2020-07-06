@@ -7,3 +7,17 @@
 # git files that we don't want to ignore even if they are dot-files
 #
 !.gitignore
+
+#
+# ignore repos pulled by build.sh
+#
+/kernelbakery
+/linux
+/piControl
+
+#
+# ignore debian packages and build files
+#
+/*.buildinfo
+/*.changes
+/*.deb
