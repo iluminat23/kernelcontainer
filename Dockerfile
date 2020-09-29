@@ -1,4 +1,4 @@
-FROM debian:buster-20200607-slim
+FROM debian:buster-slim
 
 RUN set -x; echo "Starting image build for Debian Buster" \
 && apt-get update \
