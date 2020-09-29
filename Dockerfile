@@ -1,5 +1,7 @@
 FROM debian:buster-slim
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN set -x; echo "Starting image build for Debian Buster" \
 && apt-get update \
 && apt-get -y -q install --no-install-recommends --yes \
@@ -16,6 +18,7 @@ RUN set -x; echo "Starting image build for Debian Buster" \
     debhelper \
     kmod \
 && apt-get clean \
+&& rm -rf /var/lib/apt/lists/* \
 && rm -rf /tmp/* /var/tmp/*
 
 COPY ./build.sh /usr/local/bin/
