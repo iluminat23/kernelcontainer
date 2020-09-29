@@ -14,6 +14,7 @@ RUN set -x; echo "Starting image build for Debian Buster" \
     bc \
     rsync \
     debhelper \
+    kmod \
 && apt-get clean \
 && rm -rf /tmp/* /var/tmp/*
 
