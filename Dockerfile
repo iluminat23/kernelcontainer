@@ -21,6 +21,6 @@ RUN set -x; echo "Starting image build for Debian Buster" \
 && rm -rf /var/lib/apt/lists/* \
 && rm -rf /tmp/* /var/tmp/*
 
-COPY ./build.sh /usr/local/bin/
+COPY ./build.sh /usr/local/bin/run.sh
 
-CMD /usr/local/bin/build.sh
+CMD /run.sh
