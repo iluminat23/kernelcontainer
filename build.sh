@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /data
 set -e
+cd /data
 if [ ! -d linux ]; then
     git clone -b revpi-4.19 https://github.com/RevolutionPi/linux
 fi
