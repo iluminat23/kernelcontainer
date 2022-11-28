@@ -4,4 +4,8 @@ services:
         build: .
         volumes:
         - .:/data
+        - ccache:/root/.cache/ccache
         working_dir: /data
+
+volumes:
+    ccache:
