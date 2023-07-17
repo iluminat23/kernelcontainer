@@ -19,7 +19,9 @@ apt-get update \
     libssl-dev \
     devscripts \
     gcc-arm-linux-gnueabihf \
+    gcc-aarch64-linux-gnu \
     libc6-dev-armhf-cross \
+    libc6-dev-arm64-cross \
     git \
     bison \
     flex \
