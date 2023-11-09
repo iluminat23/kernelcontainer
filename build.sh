@@ -7,7 +7,7 @@ export DEBIAN_FRONTEND=noninteractive
 cd /data
 ls -l .
 if [ ! -d linux ]; then
-    git clone -b revpi-5.10 https://github.com/RevolutionPi/linux
+    git clone https://github.com/RevolutionPi/linux
 fi
 if [ ! -d piControl ]; then
     git clone https://github.com/RevolutionPi/piControl
