@@ -27,3 +27,8 @@ Building the kernel is supported for both armhf and aarch64. To build for
 aarch64, add `ARCH=arm64` to the environment variables that `debian/update.sh`
 is called with in `build.sh` and tell `dpkg-buildpackage` to build for the
 architecture `arm64`.
+After these changes run
+```sh
+docker-compose build crossbuild
+docker-compose run crossbuild
+```
